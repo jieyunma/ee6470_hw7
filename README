@@ -1,0 +1,48 @@
+File Structure:
+
+ee6470_hw7/
+|-- README
+|-- hw7_report.pdf
+|-- report.md
+`-- src/
+    |-- main_printf.cpp
+    |-- Makefile
+    |-- lena_std_short.h
+    |-- lena_std_short.bmp
+	|-- bootstrap.S
+`-- platform/
+    |-- GaussFilter.h
+	|-- SobelFilter.h
+	|-- SobelFilter_RS.h
+	|-- basic_timer.h
+	|-- dma.h
+	|-- ethernet.h
+	|-- filter_def.h
+	|-- flash.h
+	|-- mram.h
+	|-- random_source.h
+	|-- sensor.h
+	|-- sensor2.h
+	|-- terminal.h
+	|-- display.cpp
+	|-- ethernet.cpp
+	|-- mc_main.cpp
+	|-- CMakeLists.txt
+	|-- display.hpp
+
+2 directories, 26 files
+
+How to run? (use lena_std_short.bmp as input image)
+
+1.      cd $EE6470
+2.      git clone https://github.com/jieyunma/ee6470_hw7.git
+3.      Copy source file into riscv-vp/sw/gauss-multicore directory
+			type "mkdir riscv-vp/sw/gauss-multicore; cp -r ee6470_hw7/src/* $EE6470/riscv-vp/sw/gauss-multicore/"
+
+4.      Copy platform file into riscv-vp/vp/src/platform/tiny32-mc/ directory,
+			type "cp -r ee6470_hw7/platform/* $EE6470/riscv-vp/vp/src/platform/tiny32-mc/"
+
+5.      Change directory to riscv-vp/vp/build/, type "cd $EE6470/riscv-vp/build"
+6.      Build "basic-acc" platform, type "cmake .." and "make install"
+7.      Change directory to riscv-vp/sw/gauss-multicore/, type "cd $EE6470/riscv-vp/sw/gauss-multicore/"
+8.      Do the simulation, type "make" and "make sim"
