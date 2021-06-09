@@ -9,26 +9,26 @@ ee6470_hw7/
     |-- Makefile
     |-- lena_std_short.h
     |-- lena_std_short.bmp
-	|-- bootstrap.S
+    |-- bootstrap.S
 `-- platform/
     |-- GaussFilter.h
-	|-- SobelFilter.h
-	|-- SobelFilter_RS.h
-	|-- basic_timer.h
-	|-- dma.h
-	|-- ethernet.h
-	|-- filter_def.h
-	|-- flash.h
-	|-- mram.h
-	|-- random_source.h
-	|-- sensor.h
-	|-- sensor2.h
-	|-- terminal.h
-	|-- display.cpp
-	|-- ethernet.cpp
-	|-- mc_main.cpp
-	|-- CMakeLists.txt
-	|-- display.hpp
+    |-- SobelFilter.h
+    |-- SobelFilter_RS.h
+    |-- basic_timer.h
+    |-- dma.h
+    |-- ethernet.h
+    |-- filter_def.h
+    |-- flash.h
+    |-- mram.h
+    |-- random_source.h
+    |-- sensor.h
+    |-- sensor2.h
+    |-- terminal.h
+    |-- display.cpp
+    |-- ethernet.cpp
+    |-- mc_main.cpp
+    |-- CMakeLists.txt
+    |-- display.hpp
 
 2 directories, 26 files
 
